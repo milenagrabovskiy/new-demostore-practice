@@ -7,6 +7,7 @@ from practice_ds.pages.HomePage import HomePage
 
 logger = logging.getLogger(__name__)
 
+@pytest.mark.usefixtures("init_driver", "setup")
 class TestHomePage:
 
     @pytest.fixture(autouse=True)
