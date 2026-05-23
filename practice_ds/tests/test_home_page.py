@@ -19,7 +19,7 @@ class TestHomePage:
     def test_verify_number_of_products(self):
         all_products = self.homepage.get_all_products()
         logger.info(f"Found: {len(all_products)} products")
-        assert {len(all_products)} == 16, f"Expected total products: 17, Actual: {len(all_products)}"
+        assert len(all_products) == 16, f"Expected total products: 17, Actual: {len(all_products)}"
 
         # first_product = all_products[0]
         # first_product.click()
