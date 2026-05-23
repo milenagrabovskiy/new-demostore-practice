@@ -13,6 +13,7 @@ class TestHomePage:
     @pytest.fixture(autouse=True)
     def setup(self):
         self.homepage = HomePage(self.driver)
+        self.homepage.go_to_home_page()
 
     @pytest.mark.test3
     def test_verify_number_of_products(self):
